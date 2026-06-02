@@ -1,16 +1,21 @@
-Salomão Antonio Braga RA: 24047645-2
-Natália Possani de Lima  RA: 24190450-2 
-Rayan de Andrade e Andrade RA: 24211898-2
+VICTOR HUGO PACCHIONI SGOBBI
+RA: 24000732-2
 
-1. É um framework oficial voltado para promover autenticação e autorização em aplicações java
-2. O método serve para desativar a proteção contra ataques do tipo CSRF, ou seja, elesbarram o envio automático dos cookies
-3. É uma configuração do spring security que diz ao servidor para nunca criar ou usar sessões web HTTP para autenticar os usuários
-4. A função do permitAll() é liberar o acesso público a rotas ou endpoints específicos da sua API, ou seja, qualquer pessoa ou sistema pode acessar essas URLs sem precisar enviar nenhum tipo de autenticação
-5. Os requestMatcher servem para selecionar e filtrar quais rotas e métodos HTTP receber
-ao uma regra específica da segurança
-6. Sua função é criar uma regra de segurança global e obrigatória para toas as rotas de sua aplicação que voce não configurou explicitamente nos commits ou linhas anteriores
-7. É uma aplicação web que funciona com base em um princípio simples: o servidor não guarda nenhuma memória sobre as requisições anteriores do cliente
-8. A expressão lambda configura o gerenciamento de sessões do spring security para o modo stateless (não criar sessões HTTP)
+1. É um framework do spring que cuida de toda parte de segurança da aplicação, tipo quem pode entrar, quem não pode e como provar que é você mesmo
+
+2. Desativa a proteção contra CSRF, que basicamente barra envio automático de cookies maliciosos, em API REST não precisa disso não
+
+3. Fala pro servidor não guardar sessão de ninguém, cada requisição chega do zero sem o servidor lembrar de nada, tipo amnésia total
+
+4. Libera o acesso público pra aquela rota específica, qualquer um pode bater naquele endpoint sem precisar se autenticar, sem token, sem nada
+
+5. Filtra quais rotas e quais métodos HTTP vão receber uma regra de segurança específica, tipo "essa regra aqui só vale pra esse caminho e esse método"
+
+6. Cria uma regra de segurança pra todo o resto que você não configurou antes, funciona como um "e o que sobrou?" da sua configuração de segurança
+
+7. Aplicação que não guarda memória nenhuma das requisições anteriores, cada vez que o cliente manda uma requisição é como se fosse a primeira vez
+
+8. Configura o gerenciamento de sessões do spring security pra não criar sessão HTTP nenhuma, ou seja, modo stateless na prática
 
 
 
